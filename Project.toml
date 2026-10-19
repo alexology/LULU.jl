@@ -1,0 +1,33 @@
+name = "LULU"
+uuid = "b021902a-a1b7-4b2e-a532-7ac0057ea780"
+version = "0.1.0"
+authors = ["Alex Laini"]
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[weakdeps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+
+[extensions]
+LULUDataFramesExt = "DataFrames"
+
+[compat]
+DataFrames = "1"
+Dates = "1"
+Printf = "1"
+Random = "1"
+SparseArrays = "1"
+Test = "1"
+julia = "1.10"
+
+[extras]
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "DataFrames", "Random", "SparseArrays"]
