@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- The k-mer search and the banded alignment of `build_matchlist` moved to
+  the new package NucleotideSearch.jl (`search_self`), now a dependency.
+  Match lists are identical bit for bit (verified on the example data with
+  nine settings) and equally fast. The alignment unit tests moved with the
+  code. Scores and penalties above 10,000 in absolute value are now
+  rejected.
+
 ## 0.1.0 (2026-10-19)
 
 First version.

@@ -19,6 +19,7 @@ Main entry points:
 module LULU
 
 using Dates: Dates
+using NucleotideSearch: NucleotideSearch
 using Printf: Printf, @sprintf
 using SparseArrays: SparseArrays, SparseMatrixCSC, issparse, nnz, nonzeros, nzrange,
                     rowvals, sparse
@@ -33,7 +34,6 @@ include("types.jl")
 include("rnumeric.jl")
 include("io.jl")
 include("curation.jl")
-include("alignment.jl")
 include("matchlist.jl")
 
 end # module

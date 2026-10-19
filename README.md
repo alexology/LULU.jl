@@ -30,17 +30,24 @@ Main features:
   [DataFrames.jl](https://github.com/JuliaData/DataFrames.jl) is supported
   through a package extension.
 
-Dependencies: only the standard libraries `Dates`, `Printf` and `SparseArrays`.
-Julia ≥ 1.10.
+Dependencies: the standard libraries `Dates`, `Printf` and `SparseArrays`,
+and [NucleotideSearch.jl](../NucleotideSearch.jl) (pure Julia k-mer search and
+banded alignment, used by `build_matchlist`). Julia ≥ 1.10.
 
 ## Installation
 
-The package is not registered. Install it from a local copy:
+The package is not registered, and neither is NucleotideSearch.jl. Install
+both from local copies, NucleotideSearch.jl first:
 
 ```julia
 using Pkg
+Pkg.develop(path = "path/to/NucleotideSearch.jl")
 Pkg.develop(path = "path/to/LULU.jl")
 ```
+
+With Julia ≥ 1.11, `Project.toml` also points to `../NucleotideSearch.jl`
+(`[sources]`), so `julia --project=.` in a checkout next to
+NucleotideSearch.jl works without the first step.
 
 ## Quick start
 
@@ -254,7 +261,7 @@ alignment that touches the band edge is recomputed without the band. The
 output does not depend on the number of threads (verified with 1 and 12
 threads). `maxrejects = 0, minwordmatches = 0` gives an exhaustive search.
 
-Implementation notes:
+Implementation notes (the search is `search_self` of NucleotideSearch.jl):
 
 - The dynamic programming matrix is filled by anti-diagonals. The cells of an
   anti-diagonal are independent, so the inner loop is vectorised (SIMD) with
@@ -287,7 +294,7 @@ potential parents.
 
 ## Validation
 
-- **`test/`** (`julia --project=. -e 'using Pkg; Pkg.test()'`, 2,763 tests,
+- **`test/`** (`julia --project=. -e 'using Pkg; Pkg.test()'`, 1,249 tests,
   no network, about 1 minute). It compares LULU.jl with the original R
   function on 20 cases, generated with `tools/make_test_data.jl` and
   `tools/make_reference.R`:
