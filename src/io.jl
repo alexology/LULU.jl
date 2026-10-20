@@ -185,26 +185,13 @@ end
 """
     read_fasta(path) -> (ids::Vector{String}, sequences::Vector{String})
 
-Read a FASTA file. The id is the first whitespace-delimited word of the header
-line; sequences may span several lines and are converted to upper case.
+Read a FASTA file with `NucleotideSearch.read_fasta` (FASTX.jl). The id is the
+first whitespace-delimited word of the header line; sequences may span several
+lines, lose all whitespace and are converted to upper case.
 """
 function read_fasta(path::AbstractString)
-    ids = String[]; seqs = String[]
-    buf = IOBuffer()
-    for raw in readlines(path)   # readlines closes the file even if parsing fails
-        line = strip(raw)
-        isempty(line) && continue
-        if startswith(line, '>')
-            isempty(ids) || push!(seqs, uppercase(String(take!(buf))))
-            w = split(line[2:end])
-            push!(ids, isempty(w) ? "" : String(w[1]))
-        else
-            isempty(ids) && throw(ArgumentError("$path: sequence data before the first header"))
-            print(buf, line)
-        end
-    end
-    isempty(ids) || push!(seqs, uppercase(String(take!(buf))))
-    ids, seqs
+    ids, seqs = NucleotideSearch.read_fasta(path)
+    ids, map!(uppercase, seqs, seqs)
 end
 
 """

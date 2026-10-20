@@ -8,6 +8,10 @@
   nine settings) and equally fast. The alignment unit tests moved with the
   code. Scores and penalties above 10,000 in absolute value are now
   rejected.
+- `read_fasta` now calls `NucleotideSearch.read_fasta` (FASTX.jl): faster on
+  large or line-wrapped files, all whitespace removed from sequences, and an
+  `ArgumentError` for malformed files, including an empty record directly
+  followed by another header.
 
 ## 0.1.0 (2026-10-19)
 
