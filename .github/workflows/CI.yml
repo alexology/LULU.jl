@@ -16,9 +16,16 @@ jobs:
       JULIA_NUM_THREADS: 2
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: LULU.jl
+      - name: Checkout NucleotideSearch
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/NucleotideSearch.jl
+          path: NucleotideSearch.jl
       - uses: julia-actions/setup-julia@v2
         with:
           version: ${{ matrix.version }}
       - uses: julia-actions/cache@v2
-      - uses: julia-actions/julia-buildpkg@v1
-      - uses: julia-actions/julia-runtest@v1
+      - name: Test with unregistered dependency
+        run: julia --project=LULU.jl -e 'using Pkg; Pkg.develop(path=ARGS[1]); Pkg.test()' NucleotideSearch.jl

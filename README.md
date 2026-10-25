@@ -4,6 +4,10 @@ LULU.jl is a pure Julia implementation of **LULU**, the post-clustering
 curation algorithm for amplicon (metabarcoding) data by Frøslev et al. (2017).
 It ports the R package [`lulu`](https://github.com/tobiasgf/lulu) 0.1.0.
 
+This package is part of an experimental effort to use AI to port
+bioinformatics and quantitative ecology packages to Julia, with the goal of
+creating a unified environment for high performance scientific computing.
+
 LULU removes erroneous OTUs (or ASVs) from an OTU table without discarding
 rare but real ones. A "daughter" OTU is merged into a "parent" OTU when the
 two sequences are similar, the parent is at least as widespread, the
@@ -31,8 +35,19 @@ Main features:
   through a package extension.
 
 Dependencies: the standard libraries `Dates`, `Printf` and `SparseArrays`,
-and [NucleotideSearch.jl](../NucleotideSearch.jl) (pure Julia k-mer search and
+and [NucleotideSearch.jl](https://github.com/alexology/NucleotideSearch.jl) (pure Julia k-mer search and
 banded alignment, used by `build_matchlist`). Julia ≥ 1.10.
+
+## Install from GitHub
+
+This package is not registered in the Julia General registry. Install it
+from GitHub together with its unregistered dependency:
+
+```julia
+using Pkg
+Pkg.add(url="https://github.com/alexology/NucleotideSearch.jl")
+Pkg.add(url="https://github.com/alexology/LULU.jl")
+```
 
 ## Installation
 
