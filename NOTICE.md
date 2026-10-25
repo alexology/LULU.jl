@@ -17,9 +17,9 @@ Guldberg Frøslev: <https://github.com/tobiasgf/lulu> (commit cloned on
 
 Licence: the `DESCRIPTION` file of the R package states "GNU General Public
 License v3 (GPL-3)", while its `LICENSE` file contains the text of the GNU
-Lesser General Public License v3. LULU.jl is distributed under the GNU GPL v3
-(`LICENSE`), which is compatible with both: the LGPL v3 allows a work to be
-conveyed under the GPL v3.
+Lesser General Public License v3. LULU.jl follows the `LICENSE` file and is
+distributed under the GNU LGPL v3 (`LICENSE`). The LGPL v3 supplements the
+GNU GPL v3, whose text is in `COPYING`.
 
 `build_matchlist` (`src/matchlist.jl`, `src/alignment.jl`) is new code. It
 takes its search strategy and option names from VSEARCH

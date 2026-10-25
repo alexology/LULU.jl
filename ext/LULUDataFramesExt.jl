@@ -39,8 +39,14 @@ end
     DataFrame(t::OTUTable; id_col = :OTUid)
 
 Data frame with a column of OTU ids followed by one column per sample.
+Sample names must be unique and differ from `id_col`; choose another
+`id_col` when a sample is named `OTUid`.
 """
 function DataFrames.DataFrame(t::LULU.OTUTable; id_col = :OTUid)
+    length(unique(t.samples)) == length(t.samples) ||
+        throw(ArgumentError("sample names must be unique to convert to a DataFrame"))
+    string(id_col) in t.samples &&
+        throw(ArgumentError("id_col '$id_col' is also a sample name; choose another id_col"))
     df = DataFrame(string(id_col) => copy(t.ids))
     for (j, s) in enumerate(t.samples)
         df[!, s] = collect(t.counts[:, j])   # dense column also for sparse tables

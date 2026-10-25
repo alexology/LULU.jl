@@ -182,6 +182,37 @@ end
     @test LULU._resolve([1, 0, 0], 2, 0) == 2
 end
 
+@testset "Parallel chunks wait for every task" begin
+    if Threads.nthreads() == 1
+        @test_skip "needs more than one thread"
+    else
+        # Chunk 1 fails at once, chunk 2 blocks until released: the caller
+        # must not return (or throw) while the blocked task is still running.
+        release = Channel{Nothing}(1)
+        finished = Threads.Atomic{Bool}(false)
+        caller = Threads.@spawn try
+            LULU._foreach_chunk(1:2) do r
+                first(r) == 1 && error("failure at 1")
+                take!(release); finished[] = true
+            end
+            nothing
+        catch e
+            e
+        end
+        sleep(0.5)
+        @test !istaskdone(caller)
+        put!(release, nothing)
+        err = fetch(caller)
+        @test finished[]
+        @test err isa TaskFailedException
+        @test occursin("failure at 1", sprint(showerror, err))
+
+        out = zeros(Int, 100)
+        LULU._foreach_chunk(r -> (out[r] .= r .^ 2), 1:100)
+        @test out == (1:100) .^ 2
+    end
+end
+
 @testset "R numerics" begin
     # as.character() of doubles in R 4.5.
     for (x, s) in [(0.68, "0.68"), (1.0, "1"), (27.88888888888889, "27.8888888888889"),

@@ -7,7 +7,8 @@
     build_matchlist(ids, sequences; min_identity = 84, iddef = 1, query_cov = 0.9,
                     maxhits = 10, maxaccepts = 0, maxrejects = 32, wordlength = 8,
                     minwordmatches = 12, match = 2, mismatch = -4, gap_open = 20,
-                    gap_extend = 2, terminal_gap_open = 2, terminal_gap_extend = 1)
+                    gap_extend = 2, terminal_gap_open = 2, terminal_gap_extend = 1,
+                    threads = Threads.nthreads())
         -> MatchList
     build_matchlist(fasta_path; kwargs...)
 
@@ -50,9 +51,9 @@ terminal gaps; `3`: `1 - (mismatches + gap openings) / length of the longer
 sequence`. Bases other than A, C, G, T/U never count as matches.
 
 The alignment is restricted to a diagonal band wide enough for every
-alignment with identity `>= min_identity` under `iddef` 1. Queries run in
-parallel on `Threads.nthreads()` threads; the output does not depend on the
-number of threads. Self-hits are never reported.
+alignment that can be accepted (identity under `iddef` and `query_cov`). Queries run in
+parallel on `threads` tasks (default `Threads.nthreads()`, `1` for serial); the
+output does not depend on the number of threads. Self-hits are never reported.
 """
 function build_matchlist(ids::AbstractVector{<:AbstractString},
                          sequences::AbstractVector{<:AbstractString};
@@ -62,7 +63,7 @@ function build_matchlist(ids::AbstractVector{<:AbstractString},
                          minwordmatches::Integer = 12, match::Integer = 2,
                          mismatch::Integer = -4, gap_open::Integer = 20,
                          gap_extend::Integer = 2, terminal_gap_open::Integer = 2,
-                         terminal_gap_extend::Integer = 1)
+                         terminal_gap_extend::Integer = 1, threads::Integer = Threads.nthreads())
     length(ids) == length(sequences) ||
         throw(DimensionMismatch("ids and sequences must have the same length"))
     allunique(ids) || throw(ArgumentError("sequence ids must be unique"))
@@ -72,7 +73,8 @@ function build_matchlist(ids::AbstractVector{<:AbstractString},
                                        terminal_gap_open, terminal_gap_extend)
     db = NucleotideSearch.SequenceDB(ids, sequences; k = wordlength)
     results = NucleotideSearch.search_self(db; min_identity, iddef, query_cov, maxhits,
-                                           maxaccepts, maxrejects, minwordmatches, scoring)
+                                           maxaccepts, maxrejects, minwordmatches, scoring,
+                                           threads)
     query = String[]; hit = String[]; ident = Float64[]
     for hits in results, h in hits
         push!(query, ids[h.query]); push!(hit, ids[h.target]); push!(ident, h.identity)

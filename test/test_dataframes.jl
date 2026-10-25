@@ -20,4 +20,15 @@
     @test DataFrame(MatchList(mdf)).match == [90.0, 90.0]
     sd = DataFrame(sparse(t))
     @test sd == DataFrame(t) && sd.a isa Vector{Int}
+    # Colliding names must fail before an ID or sample column is overwritten.
+    colliding = OTUTable(["a", "b"], ["OTUid"], reshape([1, 2], 2, 1))
+    @test_throws ArgumentError DataFrame(colliding)
+    renamed = DataFrame(colliding; id_col = :feature)
+    @test OTUTable(renamed; id_col = :feature) == colliding
+    @test_throws ArgumentError DataFrame(colliding; id_col = "OTUid")
+    duplicate = OTUTable(["a", "b"], ["s", "s"], [1 3; 2 4])
+    @test_throws ArgumentError DataFrame(duplicate)
+    @test_throws ArgumentError DataFrame(sparse(duplicate))
+    @test colliding.ids == ["a", "b"]
+    @test duplicate.counts == [1 3; 2 4]
 end

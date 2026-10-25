@@ -155,8 +155,23 @@ function _foreach_chunk(f, range::AbstractUnitRange; chunks_per_thread::Int = 16
         f(range)
     else
         tasks = [Threads.@spawn f(r) for r in Iterators.partition(range, cld(length(range), nchunks))]
-        foreach(wait, tasks)
+        _wait_all(tasks)
     end
+    nothing
+end
+
+# Waits for every task, then rethrows the first failure in task order, so no
+# task is still running when the caller sees the error.
+function _wait_all(tasks)
+    failure = nothing
+    for t in tasks
+        try
+            wait(t)
+        catch e
+            failure === nothing && (failure = e)
+        end
+    end
+    failure === nothing || throw(failure)
     nothing
 end
 

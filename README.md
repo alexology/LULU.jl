@@ -256,7 +256,8 @@ fraction of query bases aligned to target bases is `>= query_cov`.
 | `3` | 1 − (mismatches + gap openings) / length of the longer sequence |
 
 The alignment is restricted to a diagonal band. The band is wide enough for
-every alignment that reaches `min_identity` under `iddef` 1. An accepted
+every alignment that can be accepted under `iddef`, `min_identity` and
+`query_cov`. An accepted
 alignment that touches the band edge is recomputed without the band. The
 output does not depend on the number of threads (verified with 1 and 12
 threads). `maxrejects = 0, minwordmatches = 0` gives an exhaustive search.
@@ -324,4 +325,5 @@ potential parents.
 
 The algorithm and the original R code are by Tobias Guldberg Frøslev
 (<https://github.com/tobiasgf/lulu>). LULU.jl is a derivative work released
-under the GNU General Public License v3 (see `LICENSE` and `NOTICE.md`).
+under the GNU Lesser General Public License v3 (see `LICENSE`, `COPYING`
+and `NOTICE.md`).
