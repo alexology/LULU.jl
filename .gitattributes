@@ -1,0 +1,3 @@
+# Preserve exact bytes in the inputs and R parity fixtures on every platform.
+test/data/** -text
+test/reference/** -text

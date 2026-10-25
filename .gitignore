@@ -1,5 +1,5 @@
 Manifest.toml
-reference/
+/reference/
 *.cov
 *.mem
 .DS_Store

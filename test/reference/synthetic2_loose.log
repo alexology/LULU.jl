@@ -1,0 +1,814 @@
+
+####processing: par07 #####
+---hits: oth09 
+---hits: dau19 
+---hits: dau50
+---potential parent: 
+No parent found!
+
+####processing: dau01 #####
+---hits: par12 
+---hits: par12 
+---hits: dau13
+---potential parent: 
+No parent found!
+
+####processing: par10 #####
+---hits: dau15 
+---hits: dau49 
+---hits: dau38
+---potential parent: 
+No parent found!
+
+####processing: par04 #####
+---hits: dau08 
+---hits: dau16 
+---hits: par10
+---potential parent: par10 
+---potential parent: dau16
+------checking: par10
+------relative cooccurence: 0.8 which is sufficient!
+------mean avg abundance: 2.66015777693189 which is OK!
+SETTING par04 to be an ERROR of par10
+
+------checking: dau16
+####processing: par13 #####
+---hits: dau17 
+---hits: oth03 
+---hits: dau28 
+---hits: dau21
+---potential parent: dau21
+------checking: dau21
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 0.00221382378633184
+No parent found!
+
+####processing: dau50 #####
+---hits: dup4_dau10 
+---hits: dau07 
+---hits: oth08 
+---hits: par07
+---potential parent: par07
+------checking: par07
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 4.4239438917057 which is OK!
+SETTING dau50 to be an ERROR of par07
+
+####processing: dau20 #####
+---hits: dau23 
+---hits: dau35 
+---hits: dau16 
+---hits: par13
+---potential parent: par13 
+---potential parent: dau16
+------checking: par13
+------relative cooccurence: 0.9 which is sufficient!
+------mean avg abundance: 22.030863255208 which is OK!
+SETTING dau20 to be an ERROR of par13
+
+------checking: dau16
+####processing: dau21 #####
+---hits: dau36 
+---hits: par13
+---potential parent: par13
+------checking: par13
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 482.08702020202 which is OK!
+SETTING dau21 to be an ERROR of par13
+
+####processing: dau16 #####
+---hits: oth01 
+---hits: dup4_dau10 
+---hits: dau08 
+---hits: par04 
+---hits: par15
+---potential parent: par04
+------checking: par04
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 563.982323232323 which is OK!
+SETTING dau16 to be an ERROR of par10
+
+####processing: par12 #####
+---hits: par05
+---potential parent: 
+No parent found!
+
+####processing: dau15 #####
+---hits: dau31 
+---hits: oth07 
+---hits: par10
+---potential parent: par10
+------checking: par10
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 1.48051713750836 which is OK!
+SETTING dau15 to be an ERROR of par10
+
+####processing: dau36 #####
+---hits: dau11 
+---hits: par15 
+---hits: par02 
+---hits: dau22
+---potential parent: 
+No parent found!
+
+####processing: dau02 #####
+---hits: dau35 
+---hits: dau01
+---potential parent: dau01
+------checking: dau01
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 74.855512739119 which is OK!
+SETTING dau02 to be an ERROR of dau01
+
+####processing: dau08 #####
+---hits: par04
+---potential parent: par04
+------checking: par04
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 120.725587792882 which is OK!
+SETTING dau08 to be an ERROR of par10
+
+####processing: dau11 #####
+---hits: dau23 
+---hits: par07 
+---hits: dau43
+---potential parent: par07 
+---potential parent: dau23 
+---potential parent: dau43
+------checking: par07
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 0.850429090311105 which is OK!
+SETTING dau11 to be an ERROR of par07
+
+------checking: dau23
+------checking: dau43
+####processing: par14 #####
+---hits: 
+---potential parent: 
+No parent found!
+
+####processing: dau23 #####
+---hits: dau11 
+---hits: dau45 
+---hits: oth08 
+---hits: dau49
+---potential parent: dau11
+------checking: dau11
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 14.5547277589883 which is OK!
+SETTING dau23 to be an ERROR of par07
+
+####processing: par05 #####
+---hits: dau46
+---potential parent: dau46
+------checking: dau46
+------relative cooccurence: 0.875 which is sufficient!
+------mean avg abundance: 0.977678181978123 which is OK!
+SETTING par05 to be an ERROR of dau46
+
+####processing: par01 #####
+---hits: oth07 
+---hits: dau21 
+---hits: par09 
+---hits: par15 
+---hits: dau13
+---potential parent: dau21 
+---potential parent: par15
+------checking: dau21
+------relative cooccurence: 0.625 which is sufficient!
+------mean avg abundance: 0.00101755522993231
+------checking: par15
+------relative cooccurence: 0.625 which is sufficient!
+------mean avg abundance: 0.483927052583141
+No parent found!
+
+####processing: dau46 #####
+---hits: par04 
+---hits: par05
+---potential parent: par04 
+---potential parent: par05
+------checking: par04
+------relative cooccurence: 0.5
+------checking: par05
+------relative cooccurence: 0.875 which is sufficient!
+------mean avg abundance: 0.84495348454651 which is OK!
+SETTING dau46 to be an ERROR of dau46
+
+####processing: dau33 #####
+---hits: dau29 
+---hits: par03
+---potential parent: 
+No parent found!
+
+####processing: par08 #####
+---hits: dup2_dau37
+---potential parent: 
+No parent found!
+
+####processing: par15 #####
+---hits: oth09
+---potential parent: 
+No parent found!
+
+####processing: dau27 #####
+---hits: par12 
+---hits: dau46 
+---hits: dau16
+---potential parent: dau16 
+---potential parent: par12 
+---potential parent: dau46
+------checking: dau16
+------relative cooccurence: 0.625 which is sufficient!
+------mean avg abundance: 0.315172867749692
+------checking: par12
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 79.9106051510336 which is OK!
+SETTING dau27 to be an ERROR of par12
+
+------checking: dau46
+####processing: dau31 #####
+---hits: dau15 
+---hits: dau30
+---potential parent: dau15
+------checking: dau15
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 44.2514503812381 which is OK!
+SETTING dau31 to be an ERROR of par10
+
+####processing: dau43 #####
+---hits: dau11 
+---hits: dau37
+---potential parent: dau11
+------checking: dau11
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 213.096462531501 which is OK!
+SETTING dau43 to be an ERROR of par07
+
+####processing: dau42 #####
+---hits: par14 
+---hits: par02 
+---hits: dau17 
+---hits: oth02
+---potential parent: par14
+------checking: par14
+------relative cooccurence: 0.5
+No parent found!
+
+####processing: dau34 #####
+---hits: dau38
+---potential parent: 
+No parent found!
+
+####processing: dau47 #####
+---hits: par14
+---potential parent: par14
+------checking: par14
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 573.662946428571 which is OK!
+SETTING dau47 to be an ERROR of par14
+
+####processing: dau18 #####
+---hits: dau16 
+---hits: dau04 
+---hits: dau20
+---potential parent: dau20 
+---potential parent: dau16
+------checking: dau20
+------relative cooccurence: 0.5
+------checking: dau16
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 1.10416666666667 which is OK!
+SETTING dau18 to be an ERROR of par10
+
+####processing: dau17 #####
+---hits: par03 
+---hits: par05
+---potential parent: par05 
+---potential parent: par03
+------checking: par05
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 0.820998234497619 which is OK!
+SETTING dau17 to be an ERROR of dau46
+
+------checking: par03
+####processing: par06 #####
+---hits: oth09 
+---hits: dau49 
+---hits: dau44 
+---hits: dau21 
+---hits: dau12
+---potential parent: dau21 
+---potential parent: dau44 
+---potential parent: dau12
+------checking: dau21
+------relative cooccurence: 0.714285714285714 which is sufficient!
+------mean avg abundance: 0.0024312997690653
+------checking: dau44
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 0.91322273114696 which is OK!
+SETTING par06 to be an ERROR of dau44
+
+------checking: dau12
+####processing: par02 #####
+---hits: dau28 
+---hits: dau30 
+---hits: dau41
+---potential parent: dau28
+------checking: dau28
+------relative cooccurence: 0.857142857142857 which is sufficient!
+------mean avg abundance: 0.0466132093229057
+No parent found!
+
+####processing: par09 #####
+---hits: dau14 
+---hits: dau27
+---potential parent: dau27
+------checking: dau27
+------relative cooccurence: 0.285714285714286
+No parent found!
+
+####processing: dau44 #####
+---hits: dau32 
+---hits: par06
+---potential parent: par06
+------checking: par06
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 1.12379549561369 which is OK!
+SETTING dau44 to be an ERROR of dau44
+
+####processing: dup3_par03 #####
+---hits: par03 
+---hits: dau40
+---potential parent: par03 
+---potential parent: dau40
+------checking: par03
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 1 which is OK!
+SETTING dup3_par03 to be an ERROR of par03
+
+------checking: dau40
+####processing: par03 #####
+---hits: dau35 
+---hits: dau33 
+---hits: dau38
+---potential parent: dau33
+------checking: dau33
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 1.18794102730082 which is OK!
+SETTING par03 to be an ERROR of dau33
+
+####processing: par11 #####
+---hits: oth05 
+---hits: dau29 
+---hits: dau48
+---potential parent: 
+No parent found!
+
+####processing: dup1_dau40 #####
+---hits: dup3_par03 
+---hits: dau17 
+---hits: dau40 
+---hits: dau40 
+---hits: par12 
+---hits: par14
+---potential parent: par12 
+---potential parent: par14 
+---potential parent: dau17 
+---potential parent: dup3_par03 
+---potential parent: dau40
+------checking: par12
+------relative cooccurence: 0.714285714285714 which is sufficient!
+------mean avg abundance: 2.87255675146048 which is OK!
+SETTING dup1_dau40 to be an ERROR of par12
+
+------checking: par14
+------checking: dau17
+------checking: dup3_par03
+------checking: dau40
+####processing: dau40 #####
+---hits: par08
+---potential parent: par08
+------checking: par08
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 1.2037769477859 which is OK!
+SETTING dau40 to be an ERROR of par08
+
+####processing: dup2_dau37 #####
+---hits: dau37 
+---hits: dau37
+---potential parent: dau37
+------checking: dau37
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 1 which is OK!
+SETTING dup2_dau37 to be an ERROR of dau37
+
+####processing: dau37 #####
+---hits: par06
+---potential parent: par06
+------checking: par06
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 5.40291562647719 which is OK!
+SETTING dau37 to be an ERROR of dau44
+
+####processing: dau28 #####
+---hits: par02 
+---hits: dau19
+---potential parent: par02 
+---potential parent: dau19
+------checking: par02
+------relative cooccurence: 0.857142857142857 which is sufficient!
+------mean avg abundance: 17.1234650746402 which is OK!
+SETTING dau28 to be an ERROR of par02
+
+------checking: dau19
+####processing: dau12 #####
+---hits: dau50 
+---hits: par02
+---potential parent: dau50 
+---potential parent: par02
+------checking: dau50
+------relative cooccurence: 0.571428571428571
+------checking: par02
+------relative cooccurence: 0.428571428571429
+No parent found!
+
+####processing: dau13 #####
+---hits: par14
+---potential parent: par14
+------checking: par14
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 107.815392324782 which is OK!
+SETTING dau13 to be an ERROR of par14
+
+####processing: dau19 #####
+---hits: dau11 
+---hits: dau50
+---potential parent: dau50 
+---potential parent: dau11
+------checking: dau50
+------relative cooccurence: 0.714285714285714 which is sufficient!
+------mean avg abundance: 65.1720741247057 which is OK!
+SETTING dau19 to be an ERROR of par07
+
+------checking: dau11
+####processing: dau05 #####
+---hits: par14 
+---hits: dau32
+---potential parent: par14 
+---potential parent: dau32
+------checking: par14
+------relative cooccurence: 0.333333333333333
+------checking: dau32
+------relative cooccurence: 0.333333333333333
+No parent found!
+
+####processing: dau04 #####
+---hits: par02 
+---hits: dau02
+---potential parent: dau02 
+---potential parent: par02
+------checking: dau02
+------relative cooccurence: 0.833333333333333 which is sufficient!
+------mean avg abundance: 0.100566941551265
+------checking: par02
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 1.36539996594412 which is OK!
+SETTING dau04 to be an ERROR of par02
+
+####processing: dau30 #####
+---hits: dau14 
+---hits: dau02 
+---hits: dau15 
+---hits: dau09 
+---hits: dau32 
+---hits: dau24
+---potential parent: dau15 
+---potential parent: dau02 
+---potential parent: dau24 
+---potential parent: dau14 
+---potential parent: dau09 
+---potential parent: dau32
+------checking: dau15
+------relative cooccurence: 0.666666666666667 which is sufficient!
+------mean avg abundance: 0.815509181433816 which is OK!
+SETTING dau30 to be an ERROR of par10
+
+------checking: dau02
+------checking: dau24
+------checking: dau14
+------checking: dau09
+------checking: dau32
+####processing: dau24 #####
+---hits: par04 
+---hits: par11 
+---hits: par11
+---potential parent: par04 
+---potential parent: par11
+------checking: par04
+------relative cooccurence: 0.833333333333333 which is sufficient!
+------mean avg abundance: 186.664347474628 which is OK!
+SETTING dau24 to be an ERROR of par10
+
+------checking: par11
+####processing: dau06 #####
+---hits: dau07 
+---hits: par03
+---potential parent: par03
+------checking: par03
+------relative cooccurence: 0.833333333333333 which is sufficient!
+------mean avg abundance: 0.867361996515996 which is OK!
+SETTING dau06 to be an ERROR of dau33
+
+####processing: dau14 #####
+---hits: dau18 
+---hits: dau44 
+---hits: par15 
+---hits: par09 
+---hits: dau30
+---potential parent: par15 
+---potential parent: dau18 
+---potential parent: par09 
+---potential parent: dau44 
+---potential parent: dau30
+------checking: par15
+------relative cooccurence: 0.666666666666667 which is sufficient!
+------mean avg abundance: 0.212870034712663
+------checking: dau18
+------relative cooccurence: 0.666666666666667 which is sufficient!
+------mean avg abundance: 0.0022667365360643
+------checking: par09
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 1.56354469007493 which is OK!
+SETTING dau14 to be an ERROR of par09
+
+------checking: dau44
+------checking: dau30
+####processing: dau03 #####
+---hits: par15
+---potential parent: par15
+------checking: par15
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 12.3673460701351 which is OK!
+SETTING dau03 to be an ERROR of par15
+
+####processing: dau39 #####
+---hits: dau38 
+---hits: dau10 
+---hits: unknown_otu 
+---hits: par12
+---potential parent: par12 
+---potential parent: dau10 
+---potential parent: dau38
+------checking: par12
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 4.42116593626945 which is OK!
+SETTING dau39 to be an ERROR of par12
+
+------checking: dau10
+------checking: dau38
+####processing: dau41 #####
+---hits: par02 
+---hits: par12
+---potential parent: par12 
+---potential parent: par02
+------checking: par12
+------relative cooccurence: 0.666666666666667 which is sufficient!
+------mean avg abundance: 45.2858444783199 which is OK!
+SETTING dau41 to be an ERROR of par12
+
+------checking: par02
+####processing: dup4_dau10 #####
+---hits: dau49 
+---hits: dau10 
+---hits: par06
+---potential parent: par06 
+---potential parent: dau10
+------checking: par06
+------relative cooccurence: 0.666666666666667 which is sufficient!
+------mean avg abundance: 59.4263590028168 which is OK!
+SETTING dup4_dau10 to be an ERROR of dau44
+
+------checking: dau10
+####processing: dau10 #####
+---hits: dau07 
+---hits: dup4_dau10 
+---hits: dau27 
+---hits: dau04
+---potential parent: dau27 
+---potential parent: dau04 
+---potential parent: dup4_dau10
+------checking: dau27
+------relative cooccurence: 0.666666666666667 which is sufficient!
+------mean avg abundance: 8.87545354809 which is OK!
+SETTING dau10 to be an ERROR of par12
+
+------checking: dau04
+------checking: dup4_dau10
+####processing: oth04 #####
+---hits: dau18
+---potential parent: dau18
+------checking: dau18
+------relative cooccurence: 0.833333333333333 which is sufficient!
+------mean avg abundance: 0.011461961153612
+No parent found!
+
+####processing: oth06 #####
+---hits: dau46 
+---hits: dau31
+---potential parent: dau46 
+---potential parent: dau31
+------checking: dau46
+------relative cooccurence: 0.5
+------checking: dau31
+------relative cooccurence: 0.666666666666667 which is sufficient!
+------mean avg abundance: 0.239954564892081
+No parent found!
+
+####processing: oth03 #####
+---hits: par01 
+---hits: dau24
+---potential parent: par01 
+---potential parent: dau24
+------checking: par01
+------relative cooccurence: 0.5
+------checking: dau24
+------relative cooccurence: 0.5
+No parent found!
+
+####processing: dau48 #####
+---hits: dau31 
+---hits: dup3_par03
+---potential parent: dau31 
+---potential parent: dup3_par03
+------checking: dau31
+------relative cooccurence: 0.833333333333333 which is sufficient!
+------mean avg abundance: 2.6300848037442 which is OK!
+SETTING dau48 to be an ERROR of par10
+
+------checking: dup3_par03
+####processing: dau26 #####
+---hits: dau12 
+---hits: par03 
+---hits: dau12
+---potential parent: par03 
+---potential parent: dau12
+------checking: par03
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 109.856820886749 which is OK!
+SETTING dau26 to be an ERROR of dau33
+
+------checking: dau12
+####processing: dau38 #####
+---hits: par03 
+---hits: oth09
+---potential parent: par03
+------checking: par03
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 111.164788674667 which is OK!
+SETTING dau38 to be an ERROR of dau33
+
+####processing: dau09 #####
+---hits: oth08 
+---hits: dau07 
+---hits: par03 
+---hits: par03
+---potential parent: par03
+------checking: par03
+------relative cooccurence: 0.666666666666667 which is sufficient!
+------mean avg abundance: 103.462147112147 which is OK!
+SETTING dau09 to be an ERROR of dau33
+
+####processing: dau29 #####
+---hits: par09 
+---hits: par01
+---potential parent: par01 
+---potential parent: par09
+------checking: par01
+------relative cooccurence: 0.5
+------checking: par09
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 471.059854497355 which is OK!
+SETTING dau29 to be an ERROR of par09
+
+####processing: dau32 #####
+---hits: 
+---potential parent: 
+No parent found!
+
+####processing: dau22 #####
+---hits: par14 
+---hits: par14
+---potential parent: par14
+------checking: par14
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 5.59067785848679 which is OK!
+SETTING dau22 to be an ERROR of par14
+
+####processing: dau07 #####
+---hits: dau09 
+---hits: dau06
+---potential parent: dau06 
+---potential parent: dau09
+------checking: dau06
+------relative cooccurence: 0.8 which is sufficient!
+------mean avg abundance: 4.80350095802146 which is OK!
+SETTING dau07 to be an ERROR of dau33
+
+------checking: dau09
+####processing: oth07 #####
+---hits: oth04
+---potential parent: oth04
+------checking: oth04
+------relative cooccurence: 0.4
+No parent found!
+
+####processing: oth01 #####
+---hits: oth05
+---potential parent: 
+No parent found!
+
+####processing: dau49 #####
+---hits: dau38
+---potential parent: dau38
+------checking: dau38
+------relative cooccurence: 0.4
+No parent found!
+
+####processing: dau35 #####
+---hits: par03
+---potential parent: par03
+------checking: par03
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 513.654891774892 which is OK!
+SETTING dau35 to be an ERROR of dau33
+
+####processing: oth10 #####
+---hits: oth07 
+---hits: par10
+---potential parent: par10 
+---potential parent: oth07
+------checking: par10
+------relative cooccurence: 0.75 which is sufficient!
+------mean avg abundance: 19.7081964070544 which is OK!
+SETTING oth10 to be an ERROR of par10
+
+------checking: oth07
+####processing: oth05 #####
+---hits: dau48 
+---hits: dau03
+---potential parent: dau03 
+---potential parent: dau48
+------checking: dau03
+------relative cooccurence: 0.75 which is sufficient!
+------mean avg abundance: 18.5921931409504 which is OK!
+SETTING oth05 to be an ERROR of par15
+
+------checking: dau48
+####processing: oth02 #####
+---hits: dau32 
+---hits: dau30
+---potential parent: dau30 
+---potential parent: dau32
+------checking: dau30
+------relative cooccurence: 0.333333333333333
+------checking: dau32
+------relative cooccurence: 0
+No parent found!
+
+####processing: oth09 #####
+---hits: 
+---potential parent: 
+No parent found!
+
+####processing: oth08 #####
+---hits: dau08
+---potential parent: dau08
+------checking: dau08
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 0.139130434782609
+No parent found!
+
+####processing: dau25 #####
+---hits: dau16 
+---hits: dau15
+---potential parent: dau16 
+---potential parent: dau15
+------checking: dau16
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 0.0909090909090909
+------checking: dau15
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 193 which is OK!
+SETTING dau25 to be an ERROR of par10
+
+####processing: dau45 #####
+---hits: dau10 
+---hits: dau16
+---potential parent: dau16 
+---potential parent: dau10
+------checking: dau16
+------relative cooccurence: 1 which is sufficient!
+------mean avg abundance: 5 which is OK!
+SETTING dau45 to be an ERROR of par10
+
+------checking: dau10
